@@ -11,7 +11,7 @@ import java.util.List;
 @Service
 public class UserServicelmpl implements UserService {
 
-    public UserDao userDao;
+    private final UserDao userDao;
 
     @Autowired
     public UserServicelmpl(UserDao userDao) {
